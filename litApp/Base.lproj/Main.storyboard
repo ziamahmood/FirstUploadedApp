@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="litApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="11239-NN9XC2" translatesAutoresizingMaskIntoConstraints="NO" id="DDY-Y9-Oes">
+                                <rect key="frame" x="-257" y="-192" width="644" height="940"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ITS-LIT-0" translatesAutoresizingMaskIntoConstraints="NO" id="LTa-pX-Pqm">
+                                <rect key="frame" x="49" y="0.0" width="271" height="158"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EV2-cU-ZlS">
+                                <rect key="frame" x="88" y="344" width="163" height="78"/>
+                                <state key="normal" title="Turn on the lights "/>
+                                <connections>
+                                    <action selector="lightSwitch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rmd-yI-OrU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="lightSwitch" destination="EV2-cU-ZlS" id="hH3-fc-Gbd"/>
+                        <outlet property="theBG" destination="DDY-Y9-Oes" id="Qcd-9p-nqj"/>
+                        <outlet property="theLogo" destination="LTa-pX-Pqm" id="LRC-mH-KWd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-36" y="248"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="11239-NN9XC2" width="1667" height="1667"/>
+        <image name="ITS-LIT-0" width="311" height="79"/>
+    </resources>
+</document>
